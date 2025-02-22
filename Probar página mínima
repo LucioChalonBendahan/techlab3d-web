@@ -3,14 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechLab3D - Innovación en Coronel Moldes</title>
-    <style>
-        body { background: linear-gradient(135deg, #1a1a1a, #2a0036); color: #c0c0c0; font-family: Arial, sans-serif; text-align: center; padding: 20px; }
-        h1 { color: #c0c0c0; text-shadow: 0 0 10px #8a2be2; }
-    </style>
+    <title>TechLab3D - Prueba</title>
 </head>
 <body>
     <h1>Bienvenidos a TechLab3D</h1>
-    <p>Somos el laboratorio tecnológico de Coronel Moldes que mezcla impresiones 3D, productos digitales y dispositivos electrónicos con un toque de magia moderna. ¡Tecnología con onda para nuestros clientes y amigos!</p>
 </body>
 </html>
