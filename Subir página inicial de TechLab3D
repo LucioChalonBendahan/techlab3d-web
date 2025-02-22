@@ -5,145 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechLab3D - Innovación en Coronel Moldes</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        body {
-            background: linear-gradient(135deg, #1a1a1a, #2a0036);
-            color: #c0c0c0;
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        header {
-            background: #1a1a1a;
-            padding: 20px;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 0 15px rgba(138, 43, 226, 0.5);
-        }
-
-        header svg {
-            vertical-align: middle;
-        }
-
-        nav {
-            display: inline-block;
-            margin-left: 20px;
-        }
-
-        nav a {
-            color: #8a2be2;
-            text-decoration: none;
-            margin: 0 20px;
-            font-weight: bold;
-            text-transform: uppercase;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #c0c0c0;
-            text-shadow: 0 0 10px rgba(138, 43, 226, 0.8);
-        }
-
-        section {
-            padding: 80px 20px;
-            text-align: center;
-            min-height: 100vh;
-        }
-
-        h1 {
-            font-size: 48px;
-            color: #c0c0c0;
-            text-shadow: 0 0 10px rgba(138, 43, 226, 0.8);
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 18px;
-            max-width: 800px;
-            margin: 0 auto 30px;
-        }
-
-        #inicio {
-            padding-top: 180px;
-        }
-
-        #inicio svg {
-            max-width: 100%;
-            height: auto;
-            border: 2px solid #1a1a1a;
-            box-shadow: 0 0 20px rgba(138, 43, 226, 0.7);
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .card {
-            background: #2a0036;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(192, 192, 192, 0.3);
-            transition: transform 0.3s;
-        }
-
-        .card:hover {
-            transform: scale(1.05);
-        }
-
-        .card h3 {
-            color: #8a2be2;
-            margin-bottom: 10px;
-        }
-
-        #contacto form {
-            max-width: 600px;
-            margin: 0 auto;
-            text-align: left;
-        }
-
-        #contacto input, #contacto textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            background: #1a1a1a;
-            border: 1px solid #8a2be2;
-            color: #c0c0c0;
-            border-radius: 5px;
-        }
-
-        #contacto button {
-            background: #8a2be2;
-            color: #c0c0c0;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-
-        #contacto button:hover {
-            background: #c0c0c0;
-            color: #1a1a1a;
-        }
-
-        footer {
-            background: #1a1a1a;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 -5px 15px rgba(138, 43, 226, 0.5);
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { background: linear-gradient(135deg, #1a1a1a, #2a0036); color: #c0c0c0; line-height: 1.6; overflow-x: hidden; }
+        header { background: #1a1a1a; padding: 20px; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 0 15px rgba(138, 43, 226, 0.5); }
+        header svg { vertical-align: middle; }
+        nav { display: inline-block; margin-left: 20px; }
+        nav a { color: #8a2be2; text-decoration: none; margin: 0 20px; font-weight: bold; text-transform: uppercase; transition: color 0.3s; }
+        nav a:hover { color: #c0c0c0; text-shadow: 0 0 10px rgba(138, 43, 226, 0.8); }
+        section { padding: 180px 20px 80px; text-align: center; min-height: 100vh; }
+        h1 { font-size: 48px; color: #c0c0c0; text-shadow: 0 0 10px rgba(138, 43, 226, 0.8); margin-bottom: 20px; }
+        p { font-size: 18px; max-width: 800px; margin: 0 auto 30px; }
+        #inicio svg { max-width: 100%; height: auto; border: 2px solid #1a1a1a; box-shadow: 0 0 20px rgba(138, 43, 226, 0.7); }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; }
+        .card { background: #2a0036; padding: 20px; border-radius: 10px; box-shadow: 0 0 15px rgba(192, 192, 192, 0.3); transition: transform 0.3s; }
+        .card:hover { transform: scale(1.05); }
+        .card h3 { color: #8a2be2; margin-bottom: 10px; }
+        #contacto form { max-width: 600px; margin: 0 auto; text-align: left; }
+        #contacto input, #contacto textarea { width: 100%; padding: 10px; margin: 10px 0; background: #1a1a1a; border: 1px solid #8a2be2; color: #c0c0c0; border-radius: 5px; }
+        #contacto button { background: #8a2be2; color: #c0c0c0; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; transition: background 0.3s; }
+        #contacto button:hover { background: #c0c0c0; color: #1a1a1a; }
+        footer { background: #1a1a1a; padding: 20px; text-align: center; box-shadow: 0 -5px 15px rgba(138, 43, 226, 0.5); }
     </style>
 </head>
 <body>
